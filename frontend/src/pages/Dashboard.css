@@ -1,0 +1,73 @@
+.dashboard-container {
+  padding: 40px;
+  background-color: #f1f5f9;
+  min-height: 100vh;
+}
+
+.dashboard-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #1e293b;
+}
+
+
+.cards-container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.dashboard-card {
+  flex: 1;
+  min-width: 250px;
+  padding: 30px;
+  border-radius: 16px;
+  color: white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+.dashboard-card h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.dashboard-card p {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+/* ============================= */
+/* CARD COLORS */
+/* ============================= */
+
+.total {
+  background: linear-gradient(135deg, #1e293b, #334155);
+}
+
+.present {
+  background: linear-gradient(135deg, #16a34a, #22c55e);
+}
+
+.absent {
+  background: linear-gradient(135deg, #dc2626, #ef4444);
+}
+
+/* ============================= */
+/* HOVER EFFECT */
+/* ============================= */
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 900px) {
+  .cards-container {
+    flex-direction: column;
+  }
+}
