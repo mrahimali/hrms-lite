@@ -38,3 +38,28 @@ h1 a{
     text-decoration: none;
     color: white;
 }
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .links {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .links a {
+    font-size: 14px;
+  }
+}

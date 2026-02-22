@@ -153,3 +153,78 @@
     max-width: 100%;
   }
 }
+
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .attendance-container {
+    gap: 25px;
+    padding: 25px;
+  }
+
+  .attendance-title {
+    font-size: 24px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .attendance-container {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .mark-attendance,
+  .attendance-record {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .attendance-card,
+  .record-card {
+    padding: 20px;
+  }
+
+  .attendance-title {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  /* Table Scroll Fix */
+  .record-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+
+  .attendance-title {
+    font-size: 20px;
+  }
+
+  .form-group label {
+    font-size: 13px;
+  }
+
+  .form-group select,
+  .form-group input {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .submit-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .record-table th,
+  .record-table td {
+    font-size: 12px;
+    padding: 8px;
+  }
+}

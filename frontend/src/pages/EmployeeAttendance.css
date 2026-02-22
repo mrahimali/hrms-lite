@@ -36,3 +36,50 @@
   color: #dc2626;
   font-weight: 600;
 }
+
+
+@media (max-width: 1024px) {
+  .attendance-page {
+    padding: 30px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .attendance-page {
+    padding: 20px;
+  }
+
+  .attendance-card {
+    padding: 18px;
+  }
+
+  /* Table Scroll Fix */
+  .attendance-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .attendance-table th,
+  .attendance-table td {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+
+  .attendance-card {
+    padding: 15px;
+  }
+
+  .attendance-table th,
+  .attendance-table td {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
+

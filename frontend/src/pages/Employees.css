@@ -192,3 +192,104 @@
   display: flex;
   gap: 8px;
 }
+
+
+/* ================= RESPONSIVE ================= */
+
+/* Large Tablet */
+@media (max-width: 1024px) {
+  .employee-container,
+  .employees-container {
+    padding: 30px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+
+  .employee-container,
+  .employees-container {
+    padding: 25px;
+  }
+
+  .form-card {
+    max-width: 100%;
+  }
+
+  .employee-table th,
+  .employee-table td {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .employee-container,
+  .employees-container {
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .form-card,
+  .table-card {
+    padding: 18px;
+  }
+
+  /* Table Scroll Fix */
+  .employee-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .employee-table th,
+  .employee-table td {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  /* Action buttons stack */
+  .action-buttons {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .view-btn,
+  .delete-btn {
+    width: 100%;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+
+  .title {
+    font-size: 20px;
+  }
+
+  .form-card input {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .submit-btn {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .employee-table th,
+  .employee-table td {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
